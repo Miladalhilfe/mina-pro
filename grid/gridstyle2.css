@@ -1,0 +1,47 @@
+
+
+.box{
+    background: #0e1234;
+    color:white;
+    text-align: center;
+     
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-auto-rows:30px 30px auto 40px;
+    grid-template-areas:
+    "head head  head head head head"
+    "nav nav nav nav nav nav"
+    "side cont cont cont cont cont"
+    "side cont cont cont cont cont"
+    "side cont cont cont cont cont"
+    "footer footer footer footer footer footer"
+    ;
+    grid-gap:2px;
+}
+
+ .head{
+    grid-area: head;
+}
+.side{
+    grid-area: side;
+
+    
+}
+.nav{
+    grid-area: nav;
+}
+
+.content{
+    
+    grid-area: cont;
+ 
+    
+}
+.footer{
+    grid-area: footer;
+}  
+
+
