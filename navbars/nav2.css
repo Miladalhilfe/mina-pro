@@ -1,0 +1,138 @@
+
+@import url(https://pro.fontawesome.com/releases/v5.10.0/css/all.css);
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #fff;
+    min-height: 100vh;
+}
+nav
+{
+  width: 100%;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3DB2FF;
+  position: relative;
+  padding:8px 15px;
+  box-shadow: 0 0 20px 1px  #ff2441a1;
+  height: 60px;
+}
+nav .logo
+{
+    color:white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 800;
+    line-height:70px;
+    position: absolute;
+    left:20px;
+    transition: 2s ;
+  
+}
+nav ul .fa-times{
+    font-size: 25px;
+    color: white;
+    display:none;
+}
+nav .logo:hover
+{
+   cursor:pointer;
+   transform: rotatey(360deg);
+   color:#ff2441a1;
+}
+nav ul
+{
+  list-style: none;
+  position: absolute;
+  right: 12px;
+}
+nav ul li
+{
+   display: inline-block; 
+   padding:12px 6px;
+   text-transform: uppercase;
+}
+nav ul li a
+{
+  text-decoration: none;
+  color:white;
+  font-size:14px;
+  font-weight: 600;
+  padding:10px 6px;
+  border-radius: 10px;
+  transition: .3s ease-in-out;
+  letter-spacing: 2px;
+
+}
+nav ul li a:hover 
+{
+   background-color:transparent;
+   border-bottom: 2px solid #ff244178;
+   box-shadow: 0 0 20px 1px  #ff2441a1;
+  
+              
+}
+nav #btn-bars, nav .fa-bars{
+   display: none;  
+    line-height:5px;
+    color:white;
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width:650px) 
+{
+    nav ul {
+      
+        position: fixed;
+        width: 100%;
+        min-height:60vh;
+        background-color: #04141fda;
+        top:60px;
+        left:-100%;
+        transition: .5s ease-in-out;
+          
+    }
+    nav ul li{
+        display:block;
+        width: 100%;
+        text-align: center;
+        padding-top:20px;
+        margin-top:20px;
+        
+    }
+    nav ul li a{
+       font-size: 16px;
+        
+    }
+    nav ul li a:hover,nav ul li{
+        background-color:none;
+        border:0;
+        box-shadow: none;
+        color:#3DB2FF;
+         
+     }
+    nav .logo{
+        font-size: 20px;
+    }
+    nav .fa-bars{
+        position: absolute;
+        display: block; 
+        right:20px;
+        
+    }
+    
+#btn-bars:checked ~ ul{
+        left:0;
+        display: block;
+    }
+   
+}

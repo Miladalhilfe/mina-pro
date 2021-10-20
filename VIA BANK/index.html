@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zmarta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Doppio+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="load()">
+    <div class="container">
+        <div class="load">
+            <div class="title">
+                <h1>Låna med lägst ränta</h1>
+                <h2>Jämför dina lån</h2>
+            </div>
+            <form name="calc"  class="content">
+              
+
+                <label for="customRange1" class="form-label"> Hur mycket vill du låna?</label>
+                <div class="controls">
+                    <input type="range" class="form-range2" id="customRange1" min="5000" max="600000" step="5000" oninput="showpay()">
+                    <input type="text" name="loan" class="" id="load_input" value="5000 kr" onchange ="chR1()" >
+                </div>
+                <label for="customRange1" class="form-label">Återbetalningstid</label>
+                <div class="controls">
+                    <input type="range" class="form-range2" id="customRange2"   min="1" max="20" step="1" oninput="showpay()">
+                    <select name="year" id="Year" onchange="chR2()">
+                        <option data-v-d7dbc702="" value="" disabled="disabled"> </option>
+                        <option data-v-d7dbc702="" value="20"> 20 år</option>
+                        <option data-v-d7dbc702="" value="19"> 19 år </option>
+                        <option data-v-d7dbc702="" value="18">18 år</option>
+                        <option data-v-d7dbc702="" value="17"> 17 år </option>
+                        <option data-v-d7dbc702="" value="16"> 16 år</option>
+                        <option data-v-d7dbc702="" value="15"> 15 år </option>
+                        <option data-v-d7dbc702="" value="14"> 14 år </option>
+                        <option data-v-d7dbc702="" value="13">13 år </option>
+                        <option data-v-d7dbc702="" value="12"> 12 år</option>
+                        <option data-v-d7dbc702="" value="11"> 11 år </option>
+                        <option data-v-d7dbc702="" value="10"> 10 år </option>
+                        <option data-v-d7dbc702="" value="9"> 9 år </option>
+                        <option data-v-d7dbc702="" value="8"> 8 år </option>
+                        <option data-v-d7dbc702="" value="7"> 7 år </option>
+                        <option data-v-d7dbc702="" value="6"> 6 år </option>
+                        <option data-v-d7dbc702="" value="5"> 5 år </option>
+                        <option data-v-d7dbc702="" value="4"> 4 år </option>
+                        <option data-v-d7dbc702="" value="3"> 3 år </option>
+                        <option data-v-d7dbc702="" value="2"> 2 år </option>
+                        <option data-v-d7dbc702="" value="1"> 1 år</option>
+
+                    </select>
+                </div>
+                    <label>
+                    <span >Månadskostnad</span>
+                    <span id="monthly-cost"> </span>
+                    </label>
+                    
+                    <h4> rörlig ränta 5.95%</h4>
+                </form>
+                <span id="monthly-cost">Milad Al-Hilfi</span>
+        </div>
+ 
+
+        <script src="js/mein.js"></script>
+
+
+
+
+</body>
+
+</html>

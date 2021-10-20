@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Doppio One', sans-serif;
+    color: #201C46;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    height: 100vh;
+    
+
+}
+form{
+    height: 70%;
+}
+h2{
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+.container{
+   width: 100%;
+   height: 100vh;
+  background: cornflowerblue;
+  padding: 2rem 2%;
+}
+.load{
+    width: 50%;
+    min-width:20rem;
+    height: 100%;
+    background: #ffffff;
+    border-radius: .5rem;
+    padding:2rem;
+}
+
+.controls{
+    position: relative;
+    display: flex;
+    padding:1rem;
+    margin-bottom: 2rem;
+}
+#load_input, select{
+    width: 25%;
+    font-size: 2rem;
+    position: absolute;
+    top:-.2rem;
+    right:3rem;
+    color: #333333;
+    border:1px solid #33333349;
+}
+input[type="range"]{
+    width:60%;
+    margin-right: 2rem;
+}
+
+label{
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-left:1.2rem;
+}
+
+
+#monthly-cost{
+    font-size: 2rem;
+     margin:2rem;
+}
+
+
+@media (max-width:500px){
+    html{
+        font-size: 55%;
+    }
+    .load{
+        width: 100%;
+        padding:1rem;
+    }
+   
+}
+
+
+
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 12px solid #000000;
+    height: 30px;
+    width: 16px;
+    border-radius: 4px;
+    background: #640707;
+    cursor: pointer;
+    margin-top: -16px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+  }
+  
+  /* All the same stuff for Firefox */
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  
+  /* All the same stuff for IE */
+  input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+
+
+  
+
+  
+
